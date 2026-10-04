@@ -102,21 +102,16 @@ footer h4{color:#fff;margin-bottom:12px}footer a{display:block;font-size:14px;pa
 </div>
 <div class="copy">© 2025 E Galaxytech Ltd. All rights reserved.</div>
 </footer>
-
 <script>
 const chargerSVG=c=>`<svg width="120" height="160" viewBox="0 0 120 160" aria-label="EV charger"><rect x="25" y="10" width="70" height="130" rx="14" fill="${c}" stroke="#0d1b2a" stroke-width="3"/><circle cx="60" cy="60" r="24" fill="#fff" stroke="#0d1b2a" stroke-width="3"/><path d="M62 44 L52 64 L60 64 L56 78 L70 58 L61 58 Z" fill="#00b67a"/><rect x="42" y="100" width="36" height="8" rx="4" fill="#ffffff55"/><rect x="42" y="114" width="24" height="8" rx="4" fill="#ffffff33"/></svg>`;
-
-const collections=[
-{id:"hypervolt",name:"Hypervolt",tag:"Sleek & Smart",color:"#1b2a4a",desc:"Premium British-designed chargers with stunning LED aesthetics, app control and solar-ready charging."},
+const collections=[{id:"hypervolt",name:"Hypervolt",tag:"Sleek & Smart",color:"#1b2a4a",desc:"Premium British-designed chargers with stunning LED aesthetics, app control and solar-ready charging."},
 {id:"zappi",name:"Zappi",tag:"Eco Energy",color:"#1a6b4a",desc:"The UK's favourite eco charger. Charge from green solar or wind energy with myEnergi zappi."},
 {id:"ohme",name:"Ohme",tag:"Smart Tariffs",color:"#20486e",desc:"Intelligent charging that automatically targets the cheapest energy tariffs."},
 {id:"wallbox",name:"Wallbox",tag:"Design Icon",color:"#4a2a6e",desc:"Award-winning compact design with voice control and powerful app features."},
 {id:"eo",name:"EO Mini Pro",tag:"Ultra Compact",color:"#6e4a1a",desc:"One of the world's smallest smart chargers — powerful performance in a tiny footprint."},
 {id:"easee",name:"Easee One",tag:"Scandinavian",color:"#2a4a6e",desc:"Smart Scandinavian design with compact construction and intelligent charging."}
 ];
-
-const products=[
-{id:"hv2",col:"hypervolt",name:"Hypervolt 2 Pro 7kW",old:1099,price:949,power:"7.4 kW",type:"Type 2 Tethered",pm:"Yes",wifi:"Yes, App + Voice",solar:"Solar Compatible",warranty:"3 Years",ic:2,img:chargerSVG("#1b2a4a"),img2:chargerSVG("#236f6e"),feat:["Pen Protection Built-in","RFID & App Control","Energy Monitoring","OTPA Security Certified"]},
+const products=[{id:"hv2",col:"hypervolt",name:"Hypervolt 2 Pro 7kW",old:1099,price:949,power:"7.4 kW",type:"Type 2 Tethered",pm:"Yes",wifi:"Yes, App + Voice",solar:"Solar Compatible",warranty:"3 Years",ic:2,img:chargerSVG("#1b2a4a"),img2:chargerSVG("#236f6e"),feat:["Pen Protection Built-in","RFID & App Control","Energy Monitoring","OTPA Security Certified"]},
 {id:"hv3",col:"hypervolt",name:"Hypervolt Home 3 Pro 7kW",old:1199,price:1049,power:"7.4 kW",type:"Type 2 Tethered",pm:"Yes",wifi:"4G + WiFi Optional",solar:"Solar & Battery Ready",warranty:"3 Years",ic:3,img:chargerSVG("#16223d"),img2:chargerSVG("#31456f"),feat:["Full LED Light Bar","Integrated 4G Option","Load Balancing","Hive & Alexa Compatible"]},
 {id:"z1",col:"zappi",name:"Zappi 2.0 7kW",old:999,price:859,power:"7.4 kW",type:"Type 2 Tethered",pm:"Yes",wifi:"myEnergi Hub Optional",solar:"Eco / Eco+ / Boost Modes",warranty:"3 Years",ic:2,img:chargerSVG("#1a6b4a"),img2:chargerSVG("#2b8a63"),feat:["100% Green Solar Charging","CT Clamp Included","Grid Buffering","Made in UK"]},
 {id:"z2",col:"zappi",name:"Zappi 2.0 22kW",old:1199,price:1049,power:"22 kW",type:"Type 2 Tethered",pm:"Yes",wifi:"myEnergi Hub Optional",solar:"Eco / Eco+ / Boost Modes",warranty:"3 Years",ic:3,img:chargerSVG("#14563b"),img2:chargerSVG("#1f7a54"),feat:["3-Phase Rapid Charging","Harvi Compatible","Dynamic Load Management","Weatherproof IP65"]},
@@ -129,9 +124,7 @@ const products=[
 {id:"es1",col:"easee",name:"Easee One 7kW",old:899,price:769,power:"7.4 kW",type:"Type 2 Socket",pm:"No",wifi:"4G Built-in",solar:"Solar Ready",warranty:"3 Years",ic:2,img:chargerSVG("#2a4a6e"),img2:chargerSVG("#48709c"),feat:["4x Smaller Design","Integrated SIM","Equalizer Ready","Lifetime OTA Updates"]},
 {id:"es2",col:"easee",name:"Easee One Tethered 7kW",old:999,price:869,power:"7.4 kW",type:"Type 2 Tethered",pm:"Yes",wifi:"4G Built-in",solar:"Solar Ready",warranty:"3 Years",ic:3,img:chargerSVG("#1f3a55"),img2:chargerSVG("#3a608a"),feat:["Colour Options","Pen Protection","Load Balancing","Robust Polymer Body"]}
 ];
-
-const reviews=[
-{n:"James Whitfield",l:"Manchester",t:"Ordered a Hypervolt 3 Pro from E Galaxytech — arrived in 2 days, installer was brilliant. Saving a fortune vs big retailers!",r:5},
+const reviews=[{n:"James Whitfield",l:"Manchester",t:"Ordered a Hypervolt 3 Pro from E Galaxytech — arrived in 2 days, installer was brilliant. Saving a fortune vs big retailers!",r:5},
 {n:"Sarah Mitchell",l:"London",t:"Zappi 2.0 works perfectly with our solar panels. E Galaxytech's price was £140 cheaper than anywhere else I checked.",r:5},
 {n:"David Okafor",l:"Birmingham",t:"Fantastic customer service. WhatsApp support answered my questions within minutes. Highly recommend E Galaxytech.",r:5},
 {n:"Emma Thompson",l:"Leeds",t:"The Ohme ePod has slashed my charging bills with Octopus Intelligent Go. Smooth ordering process from start to finish.",r:5},
@@ -142,179 +135,26 @@ const reviews=[
 {n:"Mohammed Asif",l:"Bradford",t:"Second purchase from E Galaxytech — got one for my son too. Reliable company, genuine products, fast shipping.",r:5},
 {n:"Hannah Clarke",l:"Edinburgh",t:"The solar eco+ mode on my Zappi means most of my charging is basically free now. Brilliant service throughout.",r:5}
 ];
-
 const installs=["Hypervolt 3 Pro — Surrey","Zappi 2.0 Solar Install — Manchester","Ohme ePod — North London","Wallbox Pulsar — Birmingham","EO Mini Pro 3 — Bristol Driveway","Easee One — Edinburgh Home","Zappi Tethered — Leeds Garage","Hypervolt 2 — Cardiff Bay"];
-
 const app=document.getElementById("app");
 const mainnav=document.getElementById("mainnav");
 const fnav=document.getElementById("fnav");
-
-function buildNav(){
-mainnav.innerHTML=`<a onclick="go('home')">Home</a>`+
-collections.map(c=>`<a onclick="go('col','${c.id}')">${c.name}</a>`).join("")+
-`<a onclick="go('installs')">Installations</a><a onclick="go('reviews')">Reviews</a><a onclick="go('about')">About Us</a>`;
+function buildNav(){mainnav.innerHTML=`<a onclick="go('home')">Home</a>`+ collections.map(c=>`<a onclick="go('col','${c.id}')">${c.name}</a>`).join("")+ `<a onclick="go('installs')">Installations</a><a onclick="go('reviews')">Reviews</a><a onclick="go('about')">About Us</a>`;
 fnav.innerHTML=collections.map(c=>`<a onclick="go('col','${c.id}')">${c.name} Chargers</a>`).join("");
 }
 function stars(n){return "★".repeat(n)+"☆".repeat(5-n)}
-function productCard(p){
-return `<div class="card" onclick="go('product','${p.id}')">
-<div class="imgbox">${p.img}</div><div class="cbody"><h3>${p.name}</h3>
-<div class="stars">${stars(5)} <span style="color:#888;font-size:12px">(${p.ic} reviews)</span></div>
-<div><span class="price">£${p.price}</span><span class="oldp">£${p.old}</span></div>
-<span class="save">SAVE £${p.old-p.price}</span><span class="btn">View Details</span>
-</div></div>`;
+function productCard(p){return `<div class="card" onclick="go('product','${p.id}')"> <div class="imgbox">${p.img}</div><div class="cbody"><h3>${p.name}</h3> <div class="stars">${stars(5)} <span style="color:#888;font-size:12px">(${p.ic} reviews)</span></div> <div><span class="price">£${p.price}</span><span class="oldp">£${p.old}</span></div> <span class="save">SAVE £${p.old-p.price}</span><span class="btn">View Details</span> </div></div>`;
 }
-
-const pages={
-home:()=>`<div class="hero"><h2>Smart EV Charging for<br><span>Every UK Home</span></h2>
-<p>Premium electric vehicle chargers from the UK's most trusted brands — all priced £100–£150 below the big retailers. Free delivery, professional installation, and full support from E Galaxytech.</p>
-<button class="btn" onclick="go('col','hypervolt')">Shop Chargers</button><button class="btn btn-outline" onclick="go('installs')">See Installations</button></div>
-<section><div class="trust"><div><div class="ic">🚚</div><b>Free UK Delivery</b><p style="font-size:13px;color:#777">On every charger, nationwide</p></div><div><div class="ic">💰</div><b>Lowest Prices</b><p style="font-size:13px;color:#777">£100–£150 off RRP always</p></div><div><div class="ic">🔧</div><b>Pro Installation</b><p style="font-size:13px;color:#777">Certified UK installers</p></div><div><div class="ic">💬</div><b>WhatsApp Support</b><p style="font-size:13px;color:#777">447853 119757 — fast replies</p></div></div></section>
-<section><h2 class="sec">Best Sellers</h2><p class="sub">Our most popular smart chargers — unbeatable E Galaxytech prices</p><div class="grid">${[products[1],products[2],products[4],products[10]].map(productCard).join("")}</div></section>
-<section><h2 class="sec">Why UK Drivers Choose E Galaxytech</h2><p class="sub">Thousands of happy customers across Britain</p><div class="grid">${reviews.slice(0,3).map(r=>`<div class="review"><div class="stars">${stars(r.r)}</div><b>${r.n} — ${r.l}</b><p>"${r.t}"</p><span class="vbadge">✔ Verified Buyer</span></div>`).join("")}</div><div style="text-align:center;margin-top:26px"><button class="btn btn-outline" onclick="go('reviews')">Read All Reviews</button></div></section>
-<section><h2 class="sec">Successful Installations</h2><p class="sub">Recent E Galaxytech installs across the UK</p><div class="installgrid">${installs.map(i=>`<div class="install"><div class="ph">${chargerSVG("#8fcebe")}</div><p>✅ ${i}</p></div>`).join("")}</div></section>`,
+const pages={home:()=>`<div class="hero"><h2>Smart EV Charging for<br><span>Every UK Home</span></h2> <p>Premium electric vehicle chargers from the UK's most trusted brands — all priced £100–£150 below the big retailers. Free delivery, professional installation, and full support from E Galaxytech.</p> <button class="btn" onclick="go('col','hypervolt')">Shop Chargers</button><button class="btn btn-outline" onclick="go('installs')">See Installations</button></div> <section><div class="trust"><div><div class="ic">🚚</div><b>Free UK Delivery</b><p style="font-size:13px;color:#777">On every charger, nationwide</p></div><div><div class="ic">💰</div><b>Lowest Prices</b><p style="font-size:13px;color:#777">£100–£150 off RRP always</p></div><div><div class="ic">🔧</div><b>Pro Installation</b><p style="font-size:13px;color:#777">Certified UK installers</p></div><div><div class="ic">💬</div><b>WhatsApp Support</b><p style="font-size:13px;color:#777">447520677992 — fast replies</p></div></div></section> <section><h2 class="sec">Best Sellers</h2><p class="sub">Our most popular smart chargers — unbeatable E Galaxytech prices</p><div class="grid">${[products[1],products[2],products[4],products[10]].map(productCard).join("")}</div></section> <section><h2 class="sec">Why UK Drivers Choose E Galaxytech</h2><p class="sub">Thousands of happy customers across Britain</p><div class="grid">${reviews.slice(0,3).map(r=>`<div class="review"><div class="stars">${stars(r.r)}</div><b>${r.n} — ${r.l}</b><p>"${r.t}"</p><span class="vbadge">✔ Verified Buyer</span></div>`).join("")}</div><div style="text-align:center;margin-top:26px"><button class="btn btn-outline" onclick="go('reviews')">Read All Reviews</button></div></section> <section><h2 class="sec">Successful Installations</h2><p class="sub">Recent E Galaxytech installs across the UK</p><div class="installgrid">${installs.map(i=>`<div class="install"><div class="ph">${chargerSVG("#8fcebe")}</div><p>✅ ${i}</p></div>`).join("")}</div></section>`,
 col:cid=>{const c=collections.find(x=>x.id===cid);const list=products.filter(p=>p.col===cid);if(!c)return pages.home();return `<div class="lhero"><h2>${c.name} Chargers</h2><p>${c.desc}</p><span class="save" style="background:#00b67a;color:#fff">Save £100–£150 at E Galaxytech</span></div><section><div class="grid">${list.map(productCard).join("")}</div></section>`},
-product:pid=>{const p=products.find(x=>x.id===pid);if(!p)return pages.home();const c=collections.find(x=>x.id===p.col);const wa=`https://wa.me/447853119757?text=${encodeURIComponent("Hi E Galaxytech, I'd like to order the "+p.name+" (£"+p.price+")")}`;return `<section><a onclick="go('col','${p.col}')" style="color:#1b9c85;font-size:14px;cursor:pointer">← Back to ${c.name} Chargers</a><br><br><div class="pdp"><div class="gallery"><div class="main" id="mainimg">${p.img}</div><div class="thumbs"><div class="th sel" onclick="swapImg(this,'${p.id}',1)">${p.img}</div><div class="th" onclick="swapImg(this,'${p.id}',2)">${p.img2}</div></div></div><div><h2>${p.name}</h2><div class="stars" style="margin:8px 0">${stars(5)} <span style="color:#888;font-size:13px">${p.ic} verified reviews</span></div><div><span class="price" style="font-size:30px">£${p.price}</span><span class="oldp">£${p.old}</span><br><span class="save">You SAVE £${p.old-p.price} with E Galaxytech</span></div><ul class="check">${p.feat.map(f=>`<li>${f}</li>`).join("")}</ul><ul class="specs"><li><b>Charging Power</b><span>${p.power}</span></li><li><b>Connector</b><span>${p.type}</span></li><li><b>Pen Protection</b><span>${p.pm}</span></li><li><b>Connectivity</b><span>${p.wifi}</span></li><li><b>Solar Compatible</b><span>${p.solar}</span></li><li><b>Warranty</b><span>${p.warranty}</span></li><li><b>Delivery</b><span>Free UK Delivery (2–4 days)</span></li><li><b>Installation</b><span>Available Nationwide</span></li></ul><a class="btn" href="${wa}" target="_blank" rel="noopener">💬 Order on WhatsApp</a><button class="btn btn-outline" onclick="location.href='mailto:egalaxytec@ltd.co.uk?subject=${encodeURIComponent("Order: "+p.name)}'">✉️ Order by Email</button></div></div></section><section><h2 class="sec">Successful Installations</h2><div class="installgrid">${installs.slice(0,4).map(i=>`<div class="install"><div class="ph">${chargerSVG("#8fcebe")}</div><p>✅ ${i}</p></div>`).join("")}</div></section>`},
+product:pid=>{const p=products.find(x=>x.id===pid);if(!p)return pages.home();const c=collections.find(x=>x.id===p.col);const wa=`https://wa.me/447520677992?text=${encodeURIComponent("Hi E Galaxytech, I'd like to order the "+p.name+" (£"+p.price+")")}`;return `<section><a onclick="go('col','${p.col}')" style="color:#1b9c85;font-size:14px;cursor:pointer">← Back to ${c.name} Chargers</a><br><br><div class="pdp"><div class="gallery"><div class="main" id="mainimg">${p.img}</div><div class="thumbs"><div class="th sel" onclick="swapImg(this,'${p.id}',1)">${p.img}</div><div class="th" onclick="swapImg(this,'${p.id}',2)">${p.img2}</div></div></div><div><h2>${p.name}</h2><div class="stars" style="margin:8px 0">${stars(5)} <span style="color:#888;font-size:13px">${p.ic} verified reviews</span></div><div><span class="price" style="font-size:30px">£${p.price}</span><span class="oldp">£${p.old}</span><br><span class="save">You SAVE £${p.old-p.price} with E Galaxytech</span></div><ul class="check">${p.feat.map(f=>`<li>${f}</li>`).join("")}</ul><ul class="specs"><li><b>Charging Power</b><span>${p.power}</span></li><li><b>Connector</b><span>${p.type}</span></li><li><b>Pen Protection</b><span>${p.pm}</span></li><li><b>Connectivity</b><span>${p.wifi}</span></li><li><b>Solar Compatible</b><span>${p.solar}</span></li><li><b>Warranty</b><span>${p.warranty}</span></li><li><b>Delivery</b><span>Free UK Delivery (2–4 days)</span></li><li><b>Installation</b><span>Available Nationwide</span></li></ul><a class="btn" href="${wa}" target="_blank" rel="noopener">💬 Order on WhatsApp</a><button class="btn btn-outline" onclick="location.href='mailto:info@egalaxytech.co.uk?subject=${encodeURIComponent("Order: "+p.name)}'">✉️ Order by Email</button></div></div></section><section><h2 class="sec">Successful Installations</h2><div class="installgrid">${installs.slice(0,4).map(i=>`<div class="install"><div class="ph">${chargerSVG("#8fcebe")}</div><p>✅ ${i}</p></div>`).join("")}</div></section>`},
 reviews:()=>`<div class="lhero"><h2>Customer Reviews</h2><p>Real feedback from E Galaxytech customers across the UK</p></div><section><div class="grid">${reviews.map(r=>`<div class="review"><div class="stars">${stars(r.r)}</div><b>${r.n} — ${r.l}</b><p>"${r.t}"</p><span class="vbadge">✔ Verified Buyer</span></div>`).join("")}</div></section>`,
 installs:()=>`<div class="lhero"><h2>Successful Installations</h2><p>Recent E Galaxytech installations across the UK — done right, first time</p></div><section><div class="installgrid">${installs.map(i=>`<div class="install"><div class="ph">${chargerSVG("#8fcebe")}</div><p>✅ ${i}</p></div>`).join("")}</div></section>`,
-about:()=>`<div class="lhero"><h2>About E Galaxytech</h2><p>Simple, professional EV charging for homes and drivers across the UK.</p></div>
-<section><div class="legal">
-<h2>Who are we?</h2>
-<p>E Galaxytech is an EV charging business focused on making home electric vehicle charging simple, practical and accessible. We offer a range of home EV chargers and installation services designed to suit different vehicles, homes, charging needs and budgets.</p>
-<p>Our aim is to remove unnecessary jargon and help customers understand their charging options before they make a decision. From choosing the right charger to arranging installation, we aim to make the customer journey clear and straightforward.</p>
-
-<h2>Our mission</h2>
-<p>We want UK drivers to enjoy the convenience of charging their electric vehicle at home. We believe choosing and installing a home charger should not be complicated, so we focus on clear information, practical advice and reliable customer support.</p>
-<p>Our service is built around helping customers choose a suitable charger, understand the installation requirements and get their home charging setup working safely.</p>
-
-<h2>Our values</h2>
-<ul>
-<li><b>Quality:</b> We aim to provide quality products and professional installation through appropriately qualified installers.</li>
-<li><b>Honesty:</b> We aim to communicate pricing, installation requirements and any additional work clearly before proceeding.</li>
-<li><b>Simplicity:</b> We explain EV charging in straightforward language and help customers choose an option that suits their needs.</li>
-<li><b>Continuous improvement:</b> We listen to customer feedback and use it to improve our products, service and customer experience.</li>
-<li><b>Accountability:</b> If something does not go as expected, we aim to investigate it and work towards a fair resolution.</li>
-</ul>
-
-<h2>Our installation service</h2>
-<p>Installation requirements vary from property to property. Before installation, we may need information about your parking arrangements, consumer unit, cable route, earthing arrangement and other electrical conditions. Where additional work is required to complete an installation safely, we will explain the requirement and any additional cost before proceeding.</p>
-
-<h2>Payments</h2>
-<p>We accept the payment methods displayed on our website and checkout, which may include major debit and credit cards and supported online payment services. Payment providers may process your payment securely on our behalf. We do not ask customers to send full card details to us by email or WhatsApp.</p>
-
-<h2>Customer feedback</h2>
-<p>We value feedback from our customers. Reviews and comments help us understand what we are doing well and where we can improve our products, installation process and customer support.</p>
-
-<h2>Contact E Galaxytech</h2>
-<p>Email: egalaxytec@ltd.co.uk<br>WhatsApp / Helpline: 447853 119757<br>United Kingdom</p>
-</div></section>`,
-
-privacy:()=>`<div class="lhero"><h2>Privacy Policy</h2><p>How E Galaxytech collects, uses and protects your information.</p></div>
-<section><div class="legal">
-<div class="notice"><b>Privacy matters to us.</b> This policy explains what personal information we may collect when you use our website, request a quote, place an order or contact E Galaxytech.</div>
-
-<h2>1. Information we may collect</h2>
-<p>Depending on how you use our website, we may collect information such as your name, email address, telephone number, billing or installation address, postcode, vehicle or charger information, quotation details, installation requirements and messages you send to us.</p>
-<p>When you make a purchase, payment information may be processed directly by our payment provider. We do not need to store your complete card number or security code in order to process an order.</p>
-
-<h2>2. How we use your information</h2>
-<ul>
-<li>To respond to enquiries and provide quotations.</li>
-<li>To process orders and arrange delivery or installation.</li>
-<li>To communicate with you about appointments, orders, payments and customer support.</li>
-<li>To provide after-sales support and deal with complaints.</li>
-<li>To comply with legal, accounting, tax and regulatory obligations.</li>
-<li>To improve our website, products and services.</li>
-<li>Where permitted, to send relevant service or marketing communications. You can opt out of marketing communications at any time.</li>
-</ul>
-
-<h2>3. Sharing your information</h2>
-<p>We may share relevant information with trusted service providers where necessary to provide our services, such as delivery companies, installation partners, payment providers, IT providers and professional advisers. We only share information that is reasonably necessary for the relevant purpose.</p>
-
-<h2>4. Payment security</h2>
-<p>Payments may be handled by third-party payment providers using their own secure systems. E Galaxytech does not request or store your full card details through ordinary email, WhatsApp messages or social media chats.</p>
-
-<h2>5. Cookies</h2>
-<p>Our website may use cookies or similar technologies to keep the site working, understand website usage and, where applicable, support analytics or marketing. You can control cookies through your browser settings. Where legally required, we will request consent for non-essential cookies.</p>
-
-<h2>6. Data retention</h2>
-<p>We keep personal information only for as long as reasonably necessary for the purpose for which it was collected, including fulfilling orders, providing support, meeting legal obligations and resolving disputes.</p>
-
-<h2>7. Your rights</h2>
-<p>Depending on the circumstances and applicable UK data-protection law, you may have rights to request access to your personal information, correction of inaccurate information, deletion, restriction or objection to certain processing, and data portability. You may also withdraw consent where processing is based on consent.</p>
-
-<h2>8. Contact us about privacy</h2>
-<p>If you have a privacy question or want to exercise a data-protection right, contact us at <b>egalaxytec@ltd.co.uk</b>.</p>
-
-<h2>9. Updates</h2>
-<p>We may update this Privacy Policy from time to time to reflect changes to our services, technology or legal requirements. The latest version will be published on this page.</p>
-</div></section>`,
-
-terms:()=>`<div class="lhero"><h2>Terms &amp; Conditions</h2><p>Terms applying to purchases, deposits, delivery and EV charger installation.</p></div>
-<section><div class="legal">
-<div class="notice"><b>Important:</b> Installation pricing and requirements can vary by property. Please read these terms before placing an order. Nothing in these terms removes or limits any legal rights you have as a consumer.</div>
-
-<h2>1. About these terms</h2>
-<p>These Terms &amp; Conditions apply to purchases of EV chargers and related installation services from E Galaxytech through our website, by telephone, WhatsApp or other agreed ordering methods.</p>
-
-<h2>2. Orders and quotations</h2>
-<p>Website prices and automated quotations may be starting or indicative prices unless expressly stated otherwise. A final installation price may depend on the information provided by you, the property, the proposed cable route and the electrical installation. Where a survey or technical assessment identifies additional work, we will explain the revised requirements and price before carrying out that additional work.</p>
-
-<h2>3. Booking deposits and advance payments</h2>
-<p>To reserve an installation or booking slot, E Galaxytech may require an advance payment or deposit. The amount depends on the charger, installation plan, promotion or service package selected by the customer.</p>
-<p>The advance payment is used to secure your chosen booking slot and, where applicable, to allow us to arrange the charger, installer, delivery, survey or other work connected with your order.</p>
-<p><b>The required advance payment is not necessarily the same for every plan.</b> The amount applicable to your order will be shown or communicated before you make payment.</p>
-
-<h2>4. Installation booking slots</h2>
-<p>A booking slot is reserved once the required advance payment has been received and the booking has been confirmed by E Galaxytech. Requested dates are subject to installer availability and may change because of circumstances outside our reasonable control.</p>
-<p>If you need to change your appointment, please contact us as early as possible. Late cancellations or rescheduling may result in reasonable costs where an installer, materials or other resources have already been arranged.</p>
-
-<h2>5. Property and installation information</h2>
-<p>You are responsible for providing accurate information about your property, parking arrangements, electrical supply and any relevant access restrictions. A responsible adult may be required to be present during installation.</p>
-<p>Installers may need to drill or route cables through walls and other surfaces. We will take reasonable care, but minor cosmetic marks may occur as part of normal installation work. Customers should tell us about known hidden pipes, cables, structural features or other hazards before work begins.</p>
-
-<h2>6. Additional electrical work</h2>
-<p>Standard installation does not automatically include every possible electrical upgrade. If the consumer unit, earthing arrangement, electrical capacity, cable route or other infrastructure requires additional work to complete the installation safely, we will discuss the requirement and any additional cost before proceeding wherever reasonably possible.</p>
-
-<h2>7. Delivery</h2>
-<p>Delivery dates are estimates unless a specific delivery commitment has been expressly agreed. Delays caused by couriers, suppliers, weather, transport disruption or other circumstances outside our reasonable control may occur.</p>
-
-<h2>8. Grants and eligibility</h2>
-<p>Where a government or other grant is advertised or applied for, eligibility is subject to the relevant scheme rules. A customer remains responsible for any amount that is not covered by a grant. E Galaxytech cannot guarantee that a customer will qualify for a grant or that a grant application will be approved.</p>
-
-<h2>9. Payment methods</h2>
-<p>We may accept major debit and credit cards and other payment methods displayed at checkout. Payment may be processed by a third-party payment provider. Your bank or payment provider may apply its own terms or security checks.</p>
-<p>Do not send complete card details, passwords or security codes to E Galaxytech through email, WhatsApp or social media.</p>
-
-<h2>10. Changes, cancellation and refunds</h2>
-<p>Consumer cancellation rights may apply depending on the nature and timing of your order and whether goods or services have already been supplied or work has begun. If you ask us to begin services during a statutory cancellation period, you may be responsible for the reasonable proportion of services already performed where permitted by law.</p>
-<p>If an order is cancelled, any refund will be handled in accordance with applicable law and the terms communicated for your order. Where a booking deposit is expressly stated to be refundable, it will be refunded in accordance with those agreed terms.</p>
-
-<h2>11. Faulty or misdescribed products</h2>
-<p>Nothing in these terms affects your statutory consumer rights. If a charger is faulty, damaged on arrival or materially misdescribed, contact us promptly so that we can assess the issue and provide the remedy required by law.</p>
-
-<h2>12. Smart features and third-party services</h2>
-<p>Some charger functions depend on Wi-Fi, mobile signal, manufacturer apps, energy suppliers or other third-party systems. E Galaxytech cannot guarantee uninterrupted availability or compatibility of services controlled by third parties.</p>
-
-<h2>13. Events outside our reasonable control</h2>
-<p>We are not responsible for delays or failures caused by circumstances reasonably outside our control, including severe weather, supply shortages, courier disruption, power outages, third-party platform outages, installer vehicle issues, traffic disruption or Distribution Network Operator delays.</p>
-
-<h2>14. Complaints</h2>
-<p>If you have a concern about an order, product or installation, please contact us. We will review the matter and aim to resolve complaints fairly and promptly.</p>
-
-<h2>15. Legal rights</h2>
-<p>These terms are intended to operate alongside, and not replace, your statutory rights under applicable UK law. If any provision is found to be unenforceable, the remaining provisions will continue to apply to the extent permitted by law.</p>
-
-<h2>16. Contact details</h2>
-<p>E Galaxytech<br>Email: egalaxytec@ltd.co.uk<br>WhatsApp / Helpline: 447853 119757<br>United Kingdom</p>
-
-<p style="margin-top:28px;color:#777"><b>Last updated:</b> September 2026</p>
-</div></section>`
+about:()=>`<div class="lhero"><h2>About E Galaxytech</h2><p>Simple, professional EV charging for homes and drivers across the UK.</p></div><section><div class="legal"><h2>Who are we?</h2><p>E Galaxytech is an EV charging business focused on making home electric vehicle charging simple, practical and accessible. We offer a range of home EV chargers and installation services designed to suit different vehicles, homes, charging needs and budgets.</p><p>Our aim is to remove unnecessary jargon and help customers understand their charging options before they make a decision. From choosing the right charger to arranging installation, we aim to make the customer journey clear and straightforward.</p><h2>Our mission</h2><p>We want UK drivers to enjoy the convenience of charging their electric vehicle at home. We believe choosing and installing a home charger should not be complicated, so we focus on clear information, practical advice and reliable customer support.</p><p>Our service is built around helping customers choose a suitable charger, understand the installation requirements and get their home charging setup working safely.</p><h2>Our values</h2><ul><li><b>Quality:</b> We aim to provide quality products</li></ul></div></section>`
 };
-
-function swapImg(el,pid,n){const p=products.find(x=>x.id===pid);document.getElementById("mainimg").innerHTML=n===1?p.img:p.img2;el.parentElement.querySelectorAll(".th").forEach(t=>t.classList.remove("sel"));el.classList.add("sel")}
-function go(page,id){app.innerHTML=(pages[page]?pages[page](id):pages.home());window.scrollTo(0,0)}
-buildNav();go("home");
+function go(p,arg){if(pages[p])app.innerHTML=pages[p](arg);window.scrollTo(0,0)}
+function swapImg(el,pid,n){document.querySelectorAll('.th').forEach(t=>t.classList.remove('sel'));el.classList.add('sel');const pr=products.find(x=>x.id===pid);if(pr)document.getElementById('mainimg').innerHTML=n===1?pr.img:pr.img2}
+buildNav();go('home');
 </script>
 </body>
 </html>
